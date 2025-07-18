@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="opening-overlay" class="opening-overlay">
+        <div style="position:relative;z-index:1;text-align:center;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100vw;">
+            <h1 class="opening-title">Octa<span class="vyte-blue">Vyte</span></h1>
+            <button id="enter-site-btn" class="enter-site-btn">Enter Site</button>
+        </div>
+    </div>
+    <div id="video-overlay" class="video-overlay">
+        <video id="opening-video" src="pictures/Logo-2-[remix]-2.mp4" muted playsinline style="width:100vw;height:100vh;object-fit:cover;"></video>
+    </div>
+    <div id="main-content" style="display:none;">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="pictures/image-removebg-preview.png" alt="OctaVyte logo" class="logo-img" />
+                <span style="font-size: 1.5rem; font-weight: bold; color: #fff;">Octa<span class="vyte-blue">Vyte</span></span>
+            </div>
+            <button id="navbar-toggle" class="navbar-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="auth/registration.html" class="nav-btn">Register</a></li>
+                    <li><a href="auth/login.html" class="nav-btn">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="navbar-overlay"></div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="pictures/515160377_1040675808259220_5764512411069514287_n.jpg" alt="OctaVyte Team" />
+            <div class="hero-overlay"></div>
+            <div class="wave-divider">
+                <svg viewBox="0 0 1440 220" width="100%" height="120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,40 Q360,180 720,80 T1440,40 V220 H0 Z" fill="#f9f9f9" />
+                </svg>
+            </div>
+        </div>
+        <div class="hero-content fade-in-hero">
+            <h1 class="company-title">Octa<span class="vyte-blue">Vyte</span></h1>
+            <p class="company-desc">Your trusted partner for innovative solutions.</p>
+        </div>
+    </section>
+    <main>
+        <section id="about" class="fade-in-on-scroll">
+            <h2>About Us</h2>
+            <p>We are a small startup company providing top-notch services to our clients locally. Our team is dedicated to delivering quality and value.</p>
+        </section>
+        <section id="services" class="fade-in-on-scroll">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>UI/UX Design</li>
+                <li>Consulting</li>
+            </ul>
+        </section>
+        <section id="portfolio" class="fade-in-on-scroll">
+            <h2>Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">Project 1</div>
+                <div class="portfolio-item">Project 2</div>
+                <div class="portfolio-item">Project 3</div>
+            </div>
+        </section>
+        <section id="contact" class="fade-in-on-scroll">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 OctaVyte. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
