@@ -9,11 +9,11 @@
     <link rel="icon" type="image/png" sizes="48x48" href="favicon/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">   
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="main-body">
     <div id="opening-overlay" class="opening-overlay">
         <div style="position:relative;z-index:1;text-align:center;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100vw;">
             <h1 class="opening-title">Octa<span class="vyte-blue">Vyte</span></h1>
@@ -22,6 +22,7 @@
     </div>
     <div id="video-overlay" class="video-overlay">
         <video id="opening-video" src="pictures/Logo-2-[remix]-2.mp4" muted playsinline style="width:100vw;height:100vh;object-fit:cover;"></video>
+        <div class="video-watermark-cover"></div>
     </div>
     <div id="main-content" style="display:none;">
     <header>
@@ -40,6 +41,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
                     <li><a href="auth/registration.html" class="nav-btn">Register</a></li>
                     <li><a href="auth/login.html" class="nav-btn">Login</a></li>
                 </ul>
@@ -53,7 +55,7 @@
             <div class="hero-overlay"></div>
             <div class="wave-divider">
                 <svg viewBox="0 0 1440 220" width="100%" height="120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0,40 Q360,180 720,80 T1440,40 V220 H0 Z" fill="#f9f9f9" />
+                    <path d="M0,40 Q360,180 720,80 T1440,40 V220 H0 Z" fill="var(--wave-bg)" />
                 </svg>
             </div>
         </div>
